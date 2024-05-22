@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Personal resume website - Yuma</title>
+  <title>Yuma's website</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -14,7 +14,12 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,9 +27,12 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
 
   <!-- =======================================================
   * Template Name: Lonely
@@ -39,7 +47,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-    <h1>Hi, I'm Yuma!</h1>
+    <h1 class="animate__animated animate__bounce">Hi, I'm Yuma!</h1>
     <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
   </section><!-- End Hero -->
 
@@ -48,7 +56,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html">sky is the limit...</a></h1>
+        <h1><a href="index.html">"...the sky is the limit"</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -59,24 +67,7 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
           <li><a class="nav-link scrollto" href="#services">Personal skills</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
+          <li><a class="nav-link scrollto" href="#portfolio">Posts</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -87,10 +78,9 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+<!-- ======= About Section ======= -->
 <section id="about" class="about">
   <div class="container">
-
     <div class="row no-gutters">
       <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
       <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
@@ -98,8 +88,8 @@
           <div class="row">
             <div class="col-md-6 d-md-flex align-items-md-stretch">
               <div class="count-box">
-                <i class="bi bi-eye"></i>
-                <h3>Mindset</h3>
+                <img src="mind.png" alt="Mindset Icon" class="icon">
+                  <h3>Mindset</h3>
                 <p>
                   I am a visionary.
                   <br>
@@ -111,8 +101,8 @@
 
             <div class="col-md-6 d-md-flex align-items-md-stretch">
               <div class="count-box">
-                <i class="bi bi-award"></i>
-                <h3>Current Milestone</h3>
+                <img src="rock.png" alt="Mindset Icon" class="icon">
+                <h3>Milistone</h3>
                 <p>
                 I'm really excited about joining 42Prague! It's an innovative coding school that takes a unique approach to education. They offer hands-on learning and encourage collaboration among students. 
                 <br>
@@ -125,13 +115,15 @@
           <div class="row">
             <div class="col-md-12 d-md-flex align-items-md-stretch">
               <div class="count-box">
-                <i class="bi bi-pen"></i>
-                <h3>Hobbies and activities</h3>
+                <div class="section-title">
+                  <img src="heart.png" alt="Mindset Icon" class="icon">
+                  <h3>Hobbies and activities</h3>
+                </div>
                 <p>
                   During my free time, I find fulfillment in ceramics, painting, and reading. I've experimented with house dancing, pole dancing, and gym training under a personal coach. Two years ago marked my first experiences with bicycling, longboarding, and swimming.
                   <br>
                   <br>
-                  I have a passion for traveling and immersing myself in new cultures, cuisines, and architectures.Portugal holds a special place in my heart. 
+                  I have a passion for traveling and immersing myself in new cultures, cuisines, and architectures. Portugal holds a special place in my heart. 
                   As a digital nomad, I wandered through its landscapes as a solo traveler, residing in a surf camp and experiencing the vibrant community of digital nomads in Madeira. Among the cherished moments, the sunset at Pico de Areeiro stands out as an unforgettable memory.
                   <br>
                   <br>
@@ -143,9 +135,11 @@
         </div><!-- End .content-->
       </div>
     </div>
-
   </div>
 </section><!-- End About Section -->
+
+
+
 
 <!-- ======= Services Section ======= -->
 <section id="services" class="services section-bg">
@@ -276,7 +270,7 @@
     
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Highly motivated and experienced Quality Assurance Engineer transitioning to a career in Software Development. Proficient in test automation, agile methodologies, and various QA tools and frameworks, with a strong foundation in coding and software engineering principles.</p>
+          <p>Experienced Quality Assurance Engineer transitioning to a career in Software Development. Proficient in test automation, agile methodologies, and various QA tools and frameworks, with a strong foundation in coding and software engineering principles.</p>
         </div>
     
         <div class="row">
@@ -285,13 +279,6 @@
             <div class="resume-item pb-0">
               <h4>Yumzhana Tsyrendorzhieva</h4>
               <p><em>Innovative and meticulous Quality Assurance Engineer with extensive experience in automated testing, agile methodologies, and QA strategy development, now pursuing a career in Software Development.</em></p>
-              <p>
-              <ul>
-                <li>Prague, Czechia</li>
-                <li>+420608473761</li>
-                <li>yumyumzhana@gmail.com</li>
-              </ul>
-              </p>
             </div>
     
             <h3 class="resume-title">Professional Experience</h3>
@@ -417,20 +404,14 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-4">
             <div class="contact-about">
-              <h3>Lonely</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
               <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/yumzhana-tsyrendorzhieva-a5476a142/" class="linkedin"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -439,17 +420,17 @@
             <div class="info">
               <div class="d-flex align-items-center">
                 <i class="bi bi-geo-alt"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
+                <p>Prague, Czechia</p>
               </div>
 
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-envelope"></i>
-                <p>info@example.com</p>
+                <p>yumyumzhana@gmail.com</p>
               </div>
 
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-phone"></i>
-                <p>+1 5589 55488 55s</p>
+                <p>+420 608473761</p>
               </div>
 
             </div>
