@@ -362,7 +362,7 @@ h6 {
 
 #hero .btn-get-started:hover {
   padding-top: 10px;
-  color: #4b7dab;
+  color: #000000;
 }
 
 @media (min-width: 1024px) {
@@ -405,7 +405,7 @@ section {
   margin-bottom: 15px;
   padding-bottom: 15px;
   position: relative;
-  color: g;
+  color: black;
 }
 
 .section-title h2::after {
@@ -414,7 +414,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #8b9bab;
+  background: #000000;
   bottom: 0;
   left: 0;
 }
@@ -589,14 +589,14 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #ffffff;
+  background: #ffb9b9;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #000000;
+  background-color: #d7154f;
 }
 
 /*--------------------------------------------------------------
@@ -615,7 +615,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #4b7dab;
+  border-left: 2px solid #000000;
   position: relative;
 }
 
@@ -623,7 +623,7 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  color: #2c4964;
+  color: #0f1922;
   margin-bottom: 10px;
 }
 
@@ -658,7 +658,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #526475;
+  border: 2px solid #000000;
 }
 
 /*--------------------------------------------------------------
@@ -895,7 +895,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4b7dab;
+  background-color: #291e27;
 }
 
 .portfolio-details .portfolio-info {
